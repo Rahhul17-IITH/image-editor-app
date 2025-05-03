@@ -1,0 +1,69 @@
+.dashboard-root {
+    display: flex;
+    height: 100vh;
+    background: var(--background);
+  }
+  .dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+  }
+  .dashboard-content {
+    flex: 1;
+    padding: 32px 48px;
+    overflow-y: auto;
+  }
+  .dashboard-toolbar {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .upload-btn {
+    background: var(--btn-bg);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+  .upload-btn:hover {
+    background: var(--btn-hover);
+  }
+  .dashboard-editor-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .dashboard-editor-container {
+    background: var(--card-bg);
+    border-radius: 18px;
+    padding: 32px;
+    max-width: 900px;
+    width: 90vw;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.15);
+    position: relative;
+  }
+  .editor-close-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  

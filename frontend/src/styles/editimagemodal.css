@@ -1,0 +1,32 @@
+.edit-image-modal-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+  }
+  .edit-image-modal {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 32px;
+    min-width: 320px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.15);
+    position: relative;
+    text-align: center;
+  }
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  

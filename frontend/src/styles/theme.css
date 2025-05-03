@@ -1,0 +1,26 @@
+:root {
+    --background: #f4f7fa;
+    --foreground: #222;
+    --sidebar-bg: #fff;
+    --header-bg: #fff;
+    --card-bg: #fff;
+    --btn-bg: #647dee;
+    --btn-hover: #7f53ac;
+  }
+  body.dark {
+    --background: #181a20;
+    --foreground: #fff;
+    --sidebar-bg: #23263b;
+    --header-bg: #23263b;
+    --card-bg: #23263b;
+    --btn-bg: #7f53ac;
+    --btn-hover: #647dee;
+  }
+  body, html, #root {
+    background: var(--background);
+    color: var(--foreground);
+    min-height: 100vh;
+    font-family: 'Inter', Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+  }
+  

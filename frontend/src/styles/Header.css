@@ -1,0 +1,39 @@
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--header-bg);
+    padding: 24px 32px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+  }
+  .dashboard-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  .dashboard-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .theme-toggle, .signout-btn {
+    background: var(--btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .theme-toggle:hover, .signout-btn:hover {
+    background: var(--btn-hover);
+  }
+  .dashboard-user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+  }
+  
+  

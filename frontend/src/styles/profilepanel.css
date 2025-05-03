@@ -1,0 +1,23 @@
+.profile-panel {
+    background: var(--card-bg, #fff);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  }
+  .profile-info {
+    margin-bottom: 32px;
+  }
+  .profile-info div {
+    margin-bottom: 12px;
+  }
+  .profile-actions {
+    display: flex;
+    gap: 18px;
+  }
+  .profile-actions .danger {
+    background: #e74c3c;
+    color: #fff;
+  }
+  

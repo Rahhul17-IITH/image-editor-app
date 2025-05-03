@@ -1,0 +1,57 @@
+.profile-modal-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+  }
+  .profile-modal {
+    background: var(--card-bg, #fff);
+    border-radius: 16px;
+    padding: 32px;
+    min-width: 320px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.15);
+    position: relative;
+    text-align: center;
+  }
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .profile-modal input {
+    width: 90%;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  .profile-modal button {
+    background: var(--btn-bg, #647dee);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  .profile-modal button.danger {
+    background: #e74c3c;
+  }
+  .profile-modal-message {
+    margin-top: 16px;
+    color: #007bff;
+  }
+  

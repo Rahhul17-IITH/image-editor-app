@@ -1,0 +1,192 @@
+/* 1. Global box-sizing and font */
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, Verdana, Tahoma, sans-serif;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Background gradient for full viewport */
+  body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7f53ac 0%, #647dee 100%);
+    background-attachment: fixed;
+    transition: background 0.3s;
+  }
+  
+  /* 3. Auth container fills viewport, centers card */
+  .auth-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+  
+  /* 4. Auth card styling */
+  .auth-card {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    min-height: 400px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.2);
+    overflow: hidden;
+    transition: background 0.3s;
+    font-family: 'Inter', Arial, Verdana, Tahoma, sans-serif;
+  }
+  
+  /* 5. Left and right panels */
+  .auth-left, .auth-right {
+    flex: 1;
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222;
+    background: none;
+  }
+  
+  .auth-right {
+    background: linear-gradient(135deg, #7f53ac 0%, #647dee 100%);
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .auth-info {
+    color: #007bff;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  /* 6. Typography */
+  .auth-left h2, .auth-right h2 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-family: 'Inter', Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: -0.5px;
+  }
+  
+  .auth-left p, .auth-right p {
+    margin-bottom: 24px;
+    font-size: 1rem;
+    font-family: 'Inter', Arial, Verdana, Tahoma, sans-serif;
+  }
+  
+  /* 7. Input group and inputs */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #647dee;
+    pointer-events: none;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+    font-family: 'Inter', Arial, Verdana, Tahoma, sans-serif;
+    transition: border 0.2s, background 0.2s;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    border: 1.5px solid #647dee;
+    background: #f3f6fd;
+  }
+  
+  /* 8. Button */
+  .auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: #647dee;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+    font-family: 'Inter', Arial, Verdana, Tahoma, sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  .auth-btn:hover {
+    background: #7f53ac;
+  }
+  
+  /* 9. Error and switch */
+  .auth-error {
+    color: #e74c3c;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .auth-switch {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  
+  .auth-switch a {
+    color: #647dee;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+  
+  .auth-switch a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 10. Card border for dark mode */
+  [data-theme='dark'] .auth-card {
+    background: rgba(24,24,24,0.98);
+  }
+  
+  [data-theme='dark'] .auth-left, [data-theme='dark'] .auth-right {
+    color: #fff;
+  }
+  
+  [data-theme='dark'] input {
+    background: #232323;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  
+  [data-theme='dark'] input:focus {
+    background: #181818;
+  }
+  
+  [data-theme='dark'] .auth-btn {
+    background: #7f53ac;
+  }
+  
+  [data-theme='dark'] .auth-btn:hover {
+    background: #647dee;
+  }
+  

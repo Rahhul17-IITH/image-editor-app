@@ -1,0 +1,40 @@
+.edit-page-root {
+    background: var(--background);
+    min-height: 100vh;
+    padding: 32px;
+  }
+  .back-btn {
+    background: var(--btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+  .edit-page-toolbar {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .edit-page-toolbar button {
+    background: var(--btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .edit-page-toolbar button:hover {
+    background: var(--btn-hover);
+  }
+  .edit-page-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
